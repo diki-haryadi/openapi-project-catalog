@@ -145,11 +145,11 @@ const config: ZudokuConfig = {
     // () => Promise<string[]>
     "exclude": ["/404", "/private/page"]
   },
-  authentication: {
-    type: "auth0",
-    domain: process.env.ZUDOKU_PUBLIC_AUTH_DOMAIN,
-    clientId: process.env.ZUDOKU_PUBLIC_AUTH_CLIENT_ID,
-  },
+  // authentication: {
+  //   type: "auth0",
+  //   domain: process.env.ZUDOKU_PUBLIC_AUTH_DOMAIN,
+  //   clientId: process.env.ZUDOKU_PUBLIC_AUTH_CLIENT_ID,
+  // },
   mdx: {
     components: {
       MyCustomComponent,
