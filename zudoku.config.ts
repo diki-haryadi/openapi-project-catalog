@@ -13,7 +13,7 @@ interface RouteConfig {
 const config: ZudokuConfig = {
   // basePath: "/openapi-project-catalog",
   topNavigation: [
-    { id: "docs/introduction", label: "Documentation" },
+    { id: "docs", label: "Documentation" },
     { id: "api-operational", label: "Operational" },
     { id: "api-enduser", label: "End-User" },
     { id: "api-auth", label: "Authentication" },
