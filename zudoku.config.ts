@@ -42,13 +42,6 @@ const config: ZudokuConfig = {
         items: ["introduction", "example"],
       },
     ],
-    home: [
-      {
-        type: "link",
-        label: "Operational",
-        href: "/api-operational"
-      },
-    ],
   },
   redirects: [
     { from: "/", to: "/docs/introduction" },
