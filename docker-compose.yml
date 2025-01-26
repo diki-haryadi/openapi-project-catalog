@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  zudoku-portfolio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+    ports:
+      - "80:80"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+    
+  # Optional: Development container with hot reload
+  zudoku-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: base
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - "3000:3000"
+    command: pnpm dev
+    environment:
+      - NODE_ENV=development
